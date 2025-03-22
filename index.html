@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designer Studio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Montserrat for nav and Playfair Display for headings -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <!-- Left: Logo text -->
+      <div class="nav-logo">
+        Designer Studio
+      </div>
+      <!-- Center: PAM, Info -->
+      <div class="nav-center">
+        <a href="#pam">PAM</a>
+        <a href="#info">Info</a>
+      </div>
+      <!-- Right: Projects and Dropdown for Brands & Ecommerce -->
+      <div class="nav-right">
+        <a href="#projects">Projects</a>
+        <div class="dropdown">
+          <a href="#brands">Brands & Ecommerce</a>
+          <ul class="dropdown-menu">
+            <li><a href="#brands-info">Brand Info</a></li>
+            <li><a href="#ecommerce-info">Ecommerce Info</a></li>
+            <li><a href="#affiliations">Affiliations</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Elevate Your Style</h1>
+    <p>Discover our exclusive collection of fashion-forward designs crafted for the modern connoisseur. Experience elegance, innovation, and timeless style.</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="media">
+      <!-- Figure 1 -->
+      <figure data-bg="#1a1a1a">
+        <div class="video-overlay-container">
+          <img src="images/1.jpg" alt="Fashion Forward Background">
+          <iframe 
+            src="https://www.youtube.com/embed/oD4PVOIzTQg?autoplay=1&mute=1&loop=1&playlist=oD4PVOIzTQg" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <figcaption>Fashion Forward</figcaption>
+      </figure>
+      <!-- Figure 2 -->
+      <figure data-bg="#222222">
+        <div class="video-overlay-container">
+          <img src="images/2.jpg" alt="Chic Vibes Background">
+          <iframe 
+            src="https://www.youtube.com/embed/PdJq-dAQr-Y?autoplay=1&mute=1&loop=1&playlist=PdJq-dAQr-Y" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <figcaption>Chic Vibes</figcaption>
+      </figure>
+      <!-- Figure 3 -->
+      <figure data-bg="#333333">
+        <div class="video-overlay-container">
+          <img src="images/3.jpg" alt="Modern Muse Background">
+          <iframe 
+            src="https://www.youtube.com/embed/N60_oXI3wtQ?autoplay=1&mute=1&loop=1&playlist=N60_oXI3wtQ" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <figcaption>Modern Muse</figcaption>
+      </figure>
+      <!-- Figure 4 -->
+      <figure data-bg="#444444">
+        <div class="video-overlay-container">
+          <img src="images/4.jpg" alt="Urban Elegance Background">
+          <iframe 
+            src="https://www.youtube.com/embed/DdFnz8j9trQ?autoplay=1&mute=1&loop=1&playlist=DdFnz8j9trQ" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <figcaption>Urban Elegance</figcaption>
+      </figure>
+      <!-- Figure 5 -->
+      <figure data-bg="#555555">
+        <div class="video-overlay-container">
+          <img src="images/5.jpg" alt="Elegant Allure Background">
+          <iframe 
+            src="https://www.youtube.com/embed/zY3atcmLBag?autoplay=1&mute=1&loop=1&playlist=zY3atcmLBag" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <figcaption>Elegant Allure</figcaption>
+      </figure>
+      <!-- Figure 6 -->
+      <figure data-bg="#666666">
+        <div class="video-overlay-container">
+          <img src="images/6.jpg" alt="Sleek Statements Background">
+          <iframe 
+          src="https://www.youtube.com/embed/PdJq-dAQr-Y?autoplay=1&mute=1&loop=1&playlist=PdJq-dAQr-Y" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen>
+        </iframe>
+        </div>
+        <figcaption>Sleek Statements</figcaption>
+      </figure>
+      <!-- Full-Width Banner -->
+      <div class="full-width-image">
+        <img src="images/7.jpg" alt="Full Width Banner">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Company Details -->
+  <footer>
+    <p>&copy; 2023 Designer Studio. All rights reserved.</p>
+    <p>
+      Phone: <a href="tel:+1234567890">+1 (234) 567-890</a> &nbsp;|&nbsp;
+      LinkedIn: <a href="https://www.linkedin.com/company/designer-studio" target="_blank">Designer Studio</a> &nbsp;|&nbsp;
+      Email: <a href="mailto:info@designerstudio.com">info@designerstudio.com</a>
+    </p>
+    <p>
+      Address: 123 Creative Avenue, Design City, Country
+    </p>
+  </footer>
+</body>
+</html>

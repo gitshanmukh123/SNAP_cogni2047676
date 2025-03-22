@@ -1,0 +1,242 @@
+ /* Global Styles */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* Default vertical gradient background: black to dark grey */
+    background: linear-gradient(to bottom, #000000, #111111, #333333);
+    color: #ffffff;
+    transition: background 1s ease;
+  }
+  /* Navigation Bar */
+  nav {
+    background: linear-gradient(to bottom, #000000, #222222);
+    padding: 0.5em 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  /* Left: Logo text */
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    font-weight: 700;
+  }
+  /* Center: PAM, Info */
+  .nav-center {
+    display: flex;
+    gap: 2em;
+  }
+  .nav-center a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  .nav-center a:hover {
+    color: #d4af37;
+  }
+  /* Right: Projects and Dropdown for Brands & Ecommerce */
+  .nav-right {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    position: relative;
+    width: 300px; /* Fixed space */
+    justify-content: flex-end;
+    text-align: right;
+  }
+  .nav-right a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  .nav-right a:hover {
+    color: #d4af37;
+  }
+  /* Dropdown container for Brands & Ecommerce */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #222222;
+    min-width: 200px;
+    padding: 0.5em 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+  }
+  .dropdown-menu li {
+    list-style: none;
+  }
+  .dropdown-menu li a {
+    display: block;
+    padding: 0.5em 1em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .dropdown-menu li a:hover {
+    background: #d4af37;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  /* Hero Section */
+  .hero {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 2em 1em;
+    text-align: center;
+    transition: background 1s ease;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  .hero p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #cccccc;
+  }
+  /* Content Section */
+  .content {
+    padding: 1em;
+    padding-bottom: 2em;
+  }
+  /* Media Container for Figures */
+  .media {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    padding: 1em 0;
+  }
+  .media figure {
+    margin: 0;
+    width: 60%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  /* Video Overlay Container */
+  .video-overlay-container {
+    position: relative;
+    width: 100%;
+  }
+  .video-overlay-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover;
+    opacity: 0.7;
+  }
+  /* Increase video (or iframe) size to 45% for desktops */
+  .video-overlay-container video,
+  .video-overlay-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    max-width: 500px;
+    height: 45%;
+    z-index: 1;
+    border-radius: 8px;
+  }
+  /* Figcaption with alternating positions and hover effect */
+  .media figcaption {
+    position: absolute;
+    top: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  .media figure:nth-child(odd) figcaption {
+    left: 10px;
+    text-align: left;
+  }
+  .media figure:nth-child(even) figcaption {
+    right: 10px;
+    text-align: right;
+  }
+  .media figure:hover figcaption {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  @keyframes pop-in {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  /* Full-Width Banner */
+  .full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  /* Footer */
+  footer {
+    background: linear-gradient(to bottom, #000000, #444444);
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  footer a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin: 0 0.5em;
+    transition: color 0.3s ease;
+  }
+  footer a:hover {
+    color: #d4af37;
+  }
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .nav-center, .nav-right {
+      gap: 1em;
+    }
+    .media figure {
+      width: 90%;
+    }
+    .media figcaption {
+      font-size: 1.2em;
+    }
+    .video-overlay-container video,
+    .video-overlay-container iframe {
+      width: 60%;
+    }
+    .hero h1 {
+      font-size: 2.2em;
+    }
+    .hero p {
+      font-size: 1em;
+    }
+  }
