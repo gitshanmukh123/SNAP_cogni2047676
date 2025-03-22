@@ -4,33 +4,10 @@
       margin: 0;
       padding: 0;
       font-family: 'Montserrat', sans-serif;
+      /* Default vertical gradient background: black to dark grey */
       background: linear-gradient(to bottom, #000000, #111111, #333333);
       color: #ffffff;
       transition: background 1s ease;
-    }
-    /* A full-page pseudo-element for background animation */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: -1;
-      /* Inherit the body's background by default */
-      background: inherit;
-      transition: background 1s ease;
-    }
-    /* When any .media figure is hovered, animate the background */
-    body:has(.media figure:hover)::before {
-      animation: randomCycle 5s infinite;
-    }
-    @keyframes randomCycle {
-      0%   { background: #1a1a1a; }
-      25%  { background: #222222; }
-      50%  { background: #2a2a2a; }
-      75%  { background: #292929; }
-      100% { background: #1a1a1a; }
     }
     /* Navigation Bar */
     nav {
@@ -75,7 +52,7 @@
       gap: 2em;
       align-items: center;
       position: relative;
-      width: 300px;
+      width: 300px; /* Fixed space */
       justify-content: flex-end;
       text-align: right;
     }
@@ -162,10 +139,6 @@
       border-radius: 12px;
       overflow: hidden;
       cursor: pointer;
-      transition: opacity 0.3s ease;
-    }
-    .media figure:hover {
-      opacity: 0.95;
     }
     /* Video Overlay Container */
     .video-overlay-container {
@@ -234,12 +207,8 @@
       background: linear-gradient(to bottom, #000000, #444444);
       text-align: center;
       padding: 1em;
-      min-height: 35vh;
       font-size: 0.9em;
       line-height: 1.5;
-    }
-    footer p, footer ul {
-      margin: 0.5em 0;
     }
     footer a {
       color: #ffffff;
@@ -272,3 +241,4 @@
         font-size: 1em;
       }
     }
+ 
